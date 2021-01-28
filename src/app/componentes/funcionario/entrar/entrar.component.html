@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title class="titulo-tabela">Entrar</mat-card-title>
+
+    <form [formGroup]="form">
+        <div class="example-container">
+            <mat-form-field appearance="fill">
+                <mat-label>Digite seu usuário</mat-label>
+                <input matInput type="text" required formControlName="nome">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Digite a senha</mat-label>
+                <input matInput type="password" formControlName="senha">
+            </mat-form-field>
+
+            <button mat-button color="primary" (click)="logarUsuario()">Entrar</button>
+        </div>
+    </form>
+</mat-card>

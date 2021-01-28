@@ -1,0 +1,45 @@
+<mat-card>
+
+    <mat-card-title class="titulo-tabela">Cadastrar Funcionário</mat-card-title>
+
+    <form [formGroup]="form">
+        <div class="example-container">
+
+            <mat-form-field appearance="fill">
+                <mat-label>Nome</mat-label>
+                <input matInput type="text" required formControlName="nome">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>CPF</mat-label>
+                <input matInput type="text" formControlName="cpf">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Data de Nascimento</mat-label>
+                <input matInput type="date" formControlName="dtnascimento">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Endereço</mat-label>
+                <input matInput type="text" formControlName="endereco">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Contato</mat-label>
+                <input matInput type="text" formControlName="contato">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Função</mat-label>
+                <input matInput type="text" formControlName="funcao">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Departamento</mat-label>
+                <input matInput type="text" formControlName="departamento">
+            </mat-form-field>
+
+        </div>
+    </form>
+</mat-card>
